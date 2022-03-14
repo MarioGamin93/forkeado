@@ -318,6 +318,7 @@ body{
 }
 
 .icon__briefcase{
+    width: 50%;
     margin-bottom: 2em;
 }
 
@@ -329,6 +330,7 @@ body{
     color: royalblue;
     border: 1px solid royalblue;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 
