@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a3403921f8.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="icon" href="../assets/favicon/mario-favicon.ico" type="image/x-icon">
-    <!-- Google fonts-->
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -18,53 +18,70 @@
 </head>
 
 <body>
-<nav class="nav-menu">
-    <a href="../index.html"><h2 class="nav-bar__logo">Mario Gamin</h2></a> 
-    <ul class="nav-menu__list" id="sidenav">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="./decovintage.html">DecoVintage</a></li>
-       <li class="nav-item"><a class="nav-link"  href="./iguana.html">Iguanas</a></li>
-        <li class="nav-item"><a class="nav-link" href="./cuppon.html">Cuppon</a></li>
-    </ul>
-    <div class="toggler-menu">
-        <div class="toggler-menu__icon">
-        </div>
-     </div>
-    
-</nav>
-  
+
+<!-- Header navegación -->
+<header>
+    <nav class="nav-menu">
+        <a href="../index.html">
+            <h2 class="nav-bar__logo">Mario Gamin</h2>
+          </a> 
+          <ul class="nav-menu__list" id="sidenav">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="./decovintage.html">DecoVintage</a></li>
+             <li class="nav-item"><a class="nav-link"  href="./iguana.html">Iguanas</a></li>
+              <li class="nav-item"><a class="nav-link" href="./cuppon.html">Cuppon</a></li>
+          </ul>
+          <div class="toggler-menu">
+              <div class="toggler-menu__icon">
+              </div>
+           </div>
+      </nav>
+</header> 
+
+<!-- Menú principal -->
 <section class="section">
     <h1 class="title">Portafolio</h1>
-   <div class="section__decovintage">
+    <div class="section__decovintage">
        <h2 class="subtitle__decovintage">Decovintage</h2>
-       <p>Está es la primera pagina que hice le di un toque elegante, es una pagina donde puedes comprar productos es solo de practica claro, porque no funciona.</p>
-       <img src="../assets/img/decovintage-page.png" alt="decovintage page">
+       <p class="text__decovintage">Esta es la primera página que hice en Desafío Latam. Le di un toque elegante para resaltar más la idea de la página. Aquí utilizamos lo aprendido sobre html usando las clases, y css usando el margin y padding, aunque ahora como toque final le agregué responsive. </p>
+       <div class="section__img">
+           <img src="../assets/img/decovintage-page.png" alt="decovintage page">
+       </div>
        <a href="./decovintage.html">
-           <button>Ver más</button>
+           <button class="button button--decovintage">Ver más</button>
        </a>
    </div>
 
-   <div class="section__decovintage">
-    <h2 class="subtitle__decovintage">Iguanas</h2>
-    <p>Está es la segunda pagina que hice que habla un poco de las Iguanas.</p>
-    <img src="../assets/img/iguana-page.png" alt="decovintage page">
+   <div class="section__iguanapage">
+    <h2 class="subtitle__iguanapage">Iguanas</h2>
+    <p class="text__iguanapage">Esta es la segunda página que hice que habla un poco de las Iguanas. Aquí aprendimos a utilizar el display inline-block para cambiar el elemento, y que sea de bloque y de línea. También le agregue responsive con css. </p>
+    <div class="section__img">
+        <img src="../assets/img/iguana-page.png" alt="decovintage page">
+
+    </div>
     <a href="./iguana.html">
-        <button>Ver más</button>
+        <button class="button button--iguana">Ver más</button>
     </a>
    </div>
 
-   <div class="section__decovintage">
-    <h2 class="subtitle__decovintage">Cuppon</h2>
-    <p>Esta es la tercera pagína que hice que fue con un framework llamado Booststrap, que es una herramienta que facilita mucho a la hora de hacer pagínas, el diseño me gusto mucho, y tambien es solo de practica por eso tampoco funciona. </p>
-    <img src="../assets/img/cuppon-page.png" alt="decovintage page">
+   <div class="section__cupponpage">
+    <h2 class="subtitle__cupponpage">Cuppon</h2>
+    <p class="text__cupponpage">Esta es la tercera pagína que hice que fue con un framework llamado Booststrap 5, que es una herramienta que facilita mucho a la hora de hacer pagínas. El diseño me gusto mucho. Aquí usamos por primera vez el responsive en una pagína y lo que facilita utilizar las grillas en Boostrap.</p>
+    <div class="section__img">
+        <img src="../assets/img/cuppon-page.png" alt="decovintage page">
+    </div>
     <a href="./cuppon.html">
-        <button>Ver más</button>
+        <button class="button button--cuppon">Ver más</button>
     </a>
    </div>
-
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>&copy;MarioGamin</p>
+</footer>
      
- <!-- Core theme JS-->
+ <!-- Link JS -->
  <script src="../assets/js/scripts.js"></script>
 
 </body>

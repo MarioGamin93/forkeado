@@ -4,154 +4,69 @@
   box-sizing: border-box;
 }
 
-
 body{
     background-color: #eee;
     color: #444;
-    display: grid;
-    grid-template-columns: 18% 82%;
     font-family: 'League Spartan', sans-serif;
 }
 
-/* Navegación */
-
-.nav-menu{
-    position: fixed;
-    left: 0;
-    width: 400px;
-    color: rgba(238, 238, 238, 0.74);
+/* Menú principal*/
+.container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: royalblue;
-    height: 100vh;
-}
-
-.nav-menu__list{
-    list-style: none;
-}
-
-.nav-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2.8rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin-bottom: 1em;
-}
-
-.nav-item a{
-    text-decoration: none;
-    color: #ccc;
-}
-
-.nav-item a:hover,
-.nav-link:hover{
-    background: none;
-    color: #fff;
-}
-
-.nav-bar__logo{
-    opacity: 0;
-}
-
-.nav-bar__img{
-    margin-bottom: 2em;
-}
-
-.img__perfil{
-    display: flex;
-    width: 10rem;
-    border-radius: 50%;
-    border: .5rem solid rgb(255 255 225 / .2);
-}
-
-/* Menú */
-
-.container{
-    width: auto;
-    position: absolute;
-    right: 16rem;
-    top: -7rem;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
+/* contenedor sobre mi */
 .container__about{
-    position: relative;
-    top: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-evenly;
-    height: 100vh;
-}
-
-.title{
-    position: relative;
-    bottom: 2rem;
-    text-align: center;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 900px;
-    margin-bottom: .2em;
-    
-}
-
-.title__secondary{
-    color: royalblue;
+    width: 100%;
+    margin-bottom: 20em;
 }
 
 .subtitle{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: royalblue;
-    margin: 0;
     text-transform: uppercase;
-}
-
-.container__text{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-size: 1.8rem;
-    width: 900px;
     margin-bottom: 1em;
 }
 
+.container__text{
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    font-weight: 500;
+}
+
 .title__social{
-    position: relative;
-    bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: royalblue;
-    margin: 0;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 2em;
 }
 
 .social{
     display: flex;
+    gap: 50px;
     text-decoration: none;
-    align-items: center;
-    padding-bottom: 2em;
     margin-bottom: 2em;
-    position: relative;
-    bottom: 1rem;
-    left: 4rem;
 }
 
 .social__icon{
-    margin-right: 8em;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
     background-color: #333;
     text-decoration: none;
     border-radius: 50%;
@@ -162,126 +77,150 @@ body{
     font-size: 1.8rem;
 }
 
-.social__icon:hover{
-    background-color: royalblue;
-}
-
+/* contenedor informacion */
 .container__information{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
+    margin-bottom: 20em;
 }
 
 .subtitle__information{
+    font-size: 2rem;
     text-align: center;
-    font-size: 2.5rem;
     color: royalblue;
-    margin-bottom: .5em;
     text-transform: uppercase;
 }
 
 .container__date{
+    width: 90%;
     text-align: center;
     border: 1px solid royalblue;
     border-radius: 5px;
-    width: 800px;
     list-style: none;
     color: #444;
     background-color: #eee;
     padding: 2em 0 0 0;
-    margin: 0;
+    margin-bottom: 2em;
 }
 
 .container__date li{
+    font-size: 1.2rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    padding: 0 1em;
+
 }
 
 .container span{
     color: royalblue;
 }
 
+/* contenedor laboral */
 .container__labor{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
+    margin-bottom: 20em;
 }
 
 .subtitle__labor{
+    font-size: 2rem;
     text-align: center;
-    font-size: 2.5rem;
     color: royalblue;
     margin-bottom: .5em;
     text-transform: uppercase;
 }
 
+.text__labor{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 1em 1.5em 1em;
+}
+
+/* contenedor habilidades */
 .container__skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20em;
 }
 
 .title__skills{
+    font-size: 2rem;
     text-align: center;
+    position: relative;
     margin-bottom: 1em;
-    font-size: 2.5rem;
     color: royalblue;
     text-transform: uppercase;
+    bottom: -1.5rem;
+    margin-bottom: 2em;
 }
 
 .subtitle__skills{
-    font-size: 2rem;
+    font-size: 1rem;
     color: royalblue;
     text-align: center;
-    margin-bottom: 1em;
     text-transform: uppercase;
+    width: 320px;
+    margin-bottom: 2em;
 }
 
 .skills__text{
+    font-size: 1.2rem;
+    width: 90%;
     text-align: center;
+    position: relative;
+    bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
-    margin: 0;
-    font-size: 1.8rem;
-    width: 900px;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
 }
+
 
 .date__skills{
     text-align: center;
     border: 1px solid royalblue;
+    width: 90%;
     border-radius: 5px;
-    width: 800px;
     list-style: none;
     color: royalblue;
     background-color: #eee;
     padding: 2em 0 0 0;
-    margin: 0;
+    position: relative;
+    bottom: 2.5rem;
+    margin-bottom: 2em;
 }
 
 .date__skills li{
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1em;
+    padding: 0 1em;
 }
 
 .skills{
-    margin-left: 2.5em;
     display: flex;
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    gap: 20px;
     padding: 0;
+    margin: 0;
+  
 }
 
 .skills__item{
-    padding-right: 2em;
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -289,32 +228,34 @@ body{
 }
 
 .skills__item i{
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
+/* contenedor portafolio */
 .container__briefcase{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    height: 100vh;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20em;
 }
 
 .subtitle__briefcase{
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 1em;
-    font-size: 2.5rem;
     color: royalblue;
     text-transform: uppercase;
 }
 
 .briefcase__text{
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 90%;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0;
-    margin: 0;
-    font-size: 1.8rem;
-    width: 900px;
-    margin-bottom: 1.5em;
 }
 
 .icon__briefcase{
@@ -329,13 +270,158 @@ body{
     color: royalblue;
     border: 1px solid royalblue;
     cursor: pointer;
+    margin-bottom: 2em;
 }
 
-
-.button:hover{
+/* FOOTER */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: royalblue;
-    color: #fff;
+    color: #ccc;
+    height: 8vh;
 }
 
+.footer p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 
+/* Header navegación responsive mobil y tablet */
+@media screen and (max-width: 960px){
+
+    .img__perfil{
+        display: none;
+    }
+    
+    .nav-bar__logo{
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ddd;
+    }
+
+/* Navegación */
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 60px;
+        z-index: 10;
+        color: rgba(238, 238, 238, 0.74);
+        display: flex;
+        background-color: royalblue;
+    }
+    
+    .nav-menu__list{
+        position: fixed;
+        right: 100%;
+        top: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: royalblue;
+        width: 100vw;
+        overflow-y: auto;
+        transition: right 0.3s;
+        list-style: none;
+    }
+    
+    .nav-menu__visible{
+       right: 0;
+    }
+    
+    .nav-item{
+        margin-right: 2.8rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+    }
+    
+    .nav-item a{
+        text-decoration: none;
+        color: #ccc;
+    }
+
+/* botón de amburguesa */
+    .toggler-menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        border: 1px solid rgba(204, 204, 204, 0.609);
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .toggler-menu__icon{
+        width: 30px;
+        height: 2.5px;
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+    
+    .toggler-menu__icon::before,
+    .toggler-menu__icon::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2.5px;
+        background-color: #ddd;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+    
+    .toggler-menu__icon::before{
+        transform: translateY(-8px);
+    }
+    
+    .toggler-menu__icon::after{
+        transform: translateY(8px);
+    }
+    
+    .toggler-menu.open .toggler-menu__icon{
+       transform: translateX(-50px);
+       background: transparent;
+       box-shadow: none;
+    }
+    
+    .toggler-menu.open .toggler-menu__icon::before {
+       transform: rotate(45deg) translate(35px, -35px);
+    }
+    
+    .toggler-menu.open .toggler-menu__icon::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+/* parches */
+    .title{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    body{
+    padding-top: 150px;
+
+    }
+
+    .container{
+        width: 100%;
+    }
+}
 
