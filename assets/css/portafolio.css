@@ -222,11 +222,11 @@
          justify-content: center;
          background-color: brown;
          color: #ccc;
-         height: 8vh;
+         height: 60px;
      }
 
      .footer p{
-         font-size: 1.5rem;
+         font-size: 1.2rem;
          text-transform: uppercase;
      }
 
@@ -234,8 +234,7 @@
 /* Versión responsive tablet */
 @media screen and (min-width: 700px){
 
-
-/* NAV */
+/* Navegación */
     .nav-menu{
         position: fixed;
         width: 100%;
@@ -337,11 +336,9 @@
      }
 
      .footer p{
-         font-size: 1.8rem;
+         font-size: 1.5rem;
      }
- 
 }
-
 
 /* Versión responsive laptop y desktop */
 @media screen and (min-width: 1024px){
